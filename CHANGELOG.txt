@@ -1,10 +1,18 @@
 6/17/2014: v1.3.7
 
+<<<<<<< HEAD
     “áðàíà ïðîâåðêà íà íàëè÷èå íîâîé âåðñèè ïðè çàïóñêå.
     „îáàâëåíî ìåíþ îïåðàöèé äëß òåêñòîâîãî ïîëß.
     „îáàâëåí âûáîð ïðèëîæåíèÿ ïðè íàæàòèè íà ŠŒ (ïðàâóþ êíîïêó ìûøè) â ñïèñêå íàéäåííûõ.
     Žáíîâëåíû êàðòèíêè íåêîòîðûå è ëîãîòèï.
     ˆñïðàâëåíû ðàçìåðû è ðàñïîëîæåíèå íåêîòîðûõ êíîïîê, äëÿ êîððåêòíîãî îòîáðàæåíèß.
+=======
+    Ð£Ð±Ñ€Ð°Ð½Ð° Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð½Ð° Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð¹ Ð²ÐµÑ€ÑÐ¸Ð¸ Ð¿Ñ€Ð¸ Ð·Ð°Ð¿ÑƒÑÐºÐµ.
+    Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾ Ð¼ÐµÐ½ÑŽ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¹ Ð´Ð»Ñ Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾Ð»Ñ.
+    Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½ Ð²Ñ‹Ð±Ð¾Ñ€ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Â¤ Ð¿Ñ€Ð¸ Ð½Ð°Ð¶Ð°Ñ‚Ð¸Ð¸ Ð½Ð° ÐŸÐšÐœ (Ð¿Ñ€Ð°Ð²ÑƒÑŽ ÐºÐ½Ð¾Ð¿ÐºÑƒ Ð¼Ñ‹ÑˆÐ¸) Ð² ÑÐ¿Ð¸ÑÐºÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð½Ñ‹Ñ….
+    ÐžÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ñ‹ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð¸ Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿.
+    Ð˜ÑÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ñ‹ Ñ€Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð¸ Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… ÐºÐ½Ð¾Ð¿Ð¾Ðº, Ð´Ð»Â¤ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ð³Ð¾ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ.
+>>>>>>> origin/master
 
 9/25/2013: v1.3.6
 
@@ -23,7 +31,11 @@
 
 9/4/2012: v1.2.4
 
+<<<<<<< HEAD
     Remove ÒPin this program to TaskbarÓ (due to crash often. Sorry for inconvenient).
+=======
+    Remove â€œPin this program to Taskbarâ€ (due to crash often. Sorry for inconvenient).
+>>>>>>> origin/master
     Fix download apps with name contains "/"
 
 
@@ -31,9 +43,15 @@
 
     remove carrier restriction (go Option to choose your SIM Operator Numberic).
     Delete apk file.
+<<<<<<< HEAD
     Add ÒPin this program to TaskbarÓ (more like winform application).
 
 Some apps have carrier restrictions. On Android phone, you must have root permission to be able to fake carrier with Market Enabler app to download those apps. But now, Real APK Leecher gives you an option to setup SIM Operator Numberic (SON) to fake carrier. You can get SON by the following formula: SON = MCC + MNC. For example, T-Mobile has MCC 310, MNC 260, so SON is 310260. If you donÕt need this feature, just leave SON empty in Option. Here is the list of MCC and MNC.
+=======
+    Add â€œPin this program to Taskbarâ€ (more like winform application).
+
+Some apps have carrier restrictions. On Android phone, you must have root permission to be able to fake carrier with Market Enabler app to download those apps. But now, Real APK Leecher gives you an option to setup SIM Operator Numberic (SON) to fake carrier. You can get SON by the following formula: SON = MCC + MNC. For example, T-Mobile has MCC 310, MNC 260, so SON is 310260. If you donâ€™t need this feature, just leave SON empty in Option. Here is the list of MCC and MNC.
+>>>>>>> origin/master
 
 28/3/2012: v1.1.9
 
@@ -48,7 +66,11 @@ Some apps have carrier restrictions. On Android phone, you must have root permis
     Download apps with option to select file name format.
     Copy link location on Google Play.
     Search related apps.
+<<<<<<< HEAD
     Fix download app that contains Ò:Ó
+=======
+    Fix download app that contains â€œ:â€
+>>>>>>> origin/master
     Check update for new version.
 
 
