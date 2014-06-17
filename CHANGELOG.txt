@@ -1,4 +1,4 @@
-17/06/2014: v1.3.7
+6/17/2014: v1.3.7
 
 	Removed check for new version on startup
 	Added menu options for the text field
