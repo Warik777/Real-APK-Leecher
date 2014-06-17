@@ -1,8 +1,10 @@
 6/17/2014: v1.3.7
 
-	Removed check for new version on startup
-	Added menu options for the text field
-	Updated pictures & logo
+    Убрана проверка на наличие новой версии при запуске.
+    Добавлено меню операций для текстового поля.
+    Добавлен выбор приложени€ при нажатии на ПКМ (правую кнопку мыши) в списке найденных.
+    Обновлены картинки некоторые и логотип.
+    Исправлены размеры и расположение некоторых кнопок, дл€ корректного отображения.
 
 9/25/2013: v1.3.6
 
@@ -21,7 +23,7 @@
 
 9/4/2012: v1.2.4
 
-    Remove УPin this program to TaskbarФ (due to crash often. Sorry for inconvenient).
+    Remove “Pin this program to Taskbar” (due to crash often. Sorry for inconvenient).
     Fix download apps with name contains "/"
 
 
@@ -29,9 +31,9 @@
 
     remove carrier restriction (go Option to choose your SIM Operator Numberic).
     Delete apk file.
-    Add УPin this program to TaskbarФ (more like winform application).
+    Add “Pin this program to Taskbar” (more like winform application).
 
-Some apps have carrier restrictions. On Android phone, you must have root permission to be able to fake carrier with Market Enabler app to download those apps. But now, Real APK Leecher gives you an option to setup SIM Operator Numberic (SON) to fake carrier. You can get SON by the following formula: SON = MCC + MNC. For example, T-Mobile has MCC 310, MNC 260, so SON is 310260. If you donТt need this feature, just leave SON empty in Option. Here is the list of MCC and MNC.
+Some apps have carrier restrictions. On Android phone, you must have root permission to be able to fake carrier with Market Enabler app to download those apps. But now, Real APK Leecher gives you an option to setup SIM Operator Numberic (SON) to fake carrier. You can get SON by the following formula: SON = MCC + MNC. For example, T-Mobile has MCC 310, MNC 260, so SON is 310260. If you don’t need this feature, just leave SON empty in Option. Here is the list of MCC and MNC.
 
 28/3/2012: v1.1.9
 
@@ -46,7 +48,7 @@ Some apps have carrier restrictions. On Android phone, you must have root permis
     Download apps with option to select file name format.
     Copy link location on Google Play.
     Search related apps.
-    Fix download app that contains У:Ф
+    Fix download app that contains “:”
     Check update for new version.
 
 
