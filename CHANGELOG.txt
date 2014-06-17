@@ -1,0 +1,58 @@
+﻿6/17/2014: v1.3.7
+
+    Убрана проверка на наличие новой версии при запуске.
+    Добавлено меню операций для текстового поля.
+    Добавлен выбор приложени¤ при нажатии на ПКМ (правую кнопку мыши) в списке найденных.
+    Обновлены картинки некоторые и логотип.
+    Исправлены размеры и расположение некоторых кнопок, дл¤ корректного отображения.
+
+9/25/2013: v1.3.6
+
+    Fix and remove update check at first run.
+    Add a sample config file. From now, you can use my sample config file to download apk files, no need to use your own account. Simple rename app-sample.config to app.config.
+
+
+9/6/2012: v1.3.5
+
+    Fix downloading. Now any apps could be downloaded fine.
+    Download apps you purchased with your account is now available.
+    Add an option to ask the name you want to save the apk with.
+    Support Linux version (only for downloading, not scanning now)
+    Add FAQ
+
+
+9/4/2012: v1.2.4
+
+    Remove “Pin this program to Taskbar” (due to crash often. Sorry for inconvenient).
+    Fix download apps with name contains "/"
+
+
+8/4/2012: v1.2.3
+
+    remove carrier restriction (go Option to choose your SIM Operator Numberic).
+    Delete apk file.
+    Add “Pin this program to Taskbar” (more like winform application).
+
+Some apps have carrier restrictions. On Android phone, you must have root permission to be able to fake carrier with Market Enabler app to download those apps. But now, Real APK Leecher gives you an option to setup SIM Operator Numberic (SON) to fake carrier. You can get SON by the following formula: SON = MCC + MNC. For example, T-Mobile has MCC 310, MNC 260, so SON is 310260. If you don’t need this feature, just leave SON empty in Option. Here is the list of MCC and MNC.
+
+28/3/2012: v1.1.9
+
+    Remove country restrictions (go Option to choose your language/country)
+
+
+25/3/2012: v1.1.8
+
+    Option to scan existing apk folder to compare its version with market version.
+    Rename apk file manually.
+    Rename all apk files automatically with file name format option.
+    Download apps with option to select file name format.
+    Copy link location on Google Play.
+    Search related apps.
+    Fix download app that contains “:”
+    Check update for new version.
+
+
+Key features:
+
+    Download apk files from Google Play to desktop.
+    Check version of your apk local files.
