@@ -1,0 +1,507 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="jLabel2.text"/>
+        <Property name="name" type="java.lang.String" value="jLabel2" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" resourceKey="Form.title"/>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" resourceKey="jPanel1.background"/>
+        <Property name="name" type="java.lang.String" value="jPanel1" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="format1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="format2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="format3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="1">
+                                      <Component id="txtScanFolder" min="-2" pref="208" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="btnScanBrowse" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtFolder" min="-2" pref="208" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="btnBrowse" min="-2" pref="73" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="1"/>
+                              <Component id="jPanel3" alignment="0" max="32767" attributes="1"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jXLabel1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="cboRecord" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="txtSim" min="-2" pref="67" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="cboLocale" alignment="0" min="-2" pref="144" max="-2" attributes="1"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="114" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="btnSave" min="-2" pref="90" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="btnCancel" min="-2" pref="90" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jXLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboRecord" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboLocale" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtSim" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtFolder" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtScanFolder" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnScanBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="format1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="format2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="format3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel3" max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnSave" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnCancel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel5.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel5" noResource="true"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" resourceKey="jPanel2.background"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="&#x41e;&#x431;&#x449;&#x430;&#x44f; &#x438;&#x43d;&#x444;&#x43e;&#x440;&#x43c;&#x430;&#x446;&#x438;&#x44f;">
+                  <Property name="titleX" resourceKey="jPanel2.border.title"/>
+                </TitledBorder>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="jPanel2" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="1">
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtDeviceId" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtEmail" pref="209" max="32767" attributes="1"/>
+                                  <Component id="txtPass" alignment="0" pref="194" max="32767" attributes="1"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="40" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPass" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDeviceId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="org.jdesktop.swingx.JXTextField" name="txtEmail">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="txtEmail.text"/>
+                <Property name="name" type="java.lang.String" value="txtEmail" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="undo.registerDocumentHolder(txtEmail);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel1.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel1" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel3.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel3" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txtPass">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="txtPass.text"/>
+                <Property name="name" type="java.lang.String" value="txtPass" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDeviceId">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="txtDeviceId.text"/>
+                <Property name="name" type="java.lang.String" value="txtDeviceId" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="undo.registerDocumentHolder(txtDeviceId);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel4.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel4" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="org.jdesktop.swingx.JXTextField" name="txtFolder">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="txtFolder.text"/>
+            <Property name="name" type="java.lang.String" value="txtFolder" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="undo.registerDocumentHolder(txtFolder);"/>
+          </AuxValues>
+        </Component>
+        <Component class="org.jdesktop.swingx.JXButton" name="btnBrowse">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="btnBrowse.text"/>
+            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+              <Insets value="[2, 7, 2, 7]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="btnBrowse" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBrowseActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Properties>
+            <Property name="background" type="java.awt.Color" resourceKey="jPanel3.background"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="&#x412;&#x43d;&#x438;&#x43c;&#x430;&#x43d;&#x438;&#x435;">
+                  <Property name="titleX" resourceKey="jPanel3.border.title"/>
+                  <Property name="color" resourceKey="jPanel3.border.titleColor"/>
+                </TitledBorder>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="jPanel3" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="478" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jScrollPane1" pref="138" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jScrollPane1" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="org.jdesktop.swingx.JXEditorPane" name="jepAttention">
+                  <Properties>
+                    <Property name="contentType" type="java.lang.String" resourceKey="jepAttention.contentType"/>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="text" type="java.lang.String" resourceKey="jepAttention.text"/>
+                    <Property name="name" type="java.lang.String" value="jepAttention" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="hyperlinkUpdate" listener="javax.swing.event.HyperlinkListener" parameters="javax.swing.event.HyperlinkEvent" handler="jepAttentionHyperlinkUpdate"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Component class="org.jdesktop.swingx.JXLabel" name="jXLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jXLabel1.text"/>
+            <Property name="name" type="java.lang.String" value="jXLabel1" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="org.jdesktop.swingx.JXComboBox" name="cboRecord">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="10"/>
+                <StringItem index="1" value="20"/>
+                <StringItem index="2" value="30"/>
+              </StringArray>
+            </Property>
+            <Property name="name" type="java.lang.String" value="cboRecord" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="org.jdesktop.swingx.JXButton" name="btnSave">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="btnSave.text"/>
+            <Property name="name" type="java.lang.String" value="btnSave" noResource="true"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[65, 23]"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="org.jdesktop.swingx.JXButton" name="btnCancel">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="btnCancel.text"/>
+            <Property name="name" type="java.lang.String" value="btnCancel" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="org.jdesktop.swingx.JXTextField" name="txtScanFolder">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="txtScanFolder" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="undo.registerDocumentHolder(txtScanFolder);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel6.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel6" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="org.jdesktop.swingx.JXButton" name="btnScanBrowse">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="btnScanBrowse.text"/>
+            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+              <Insets value="[2, 7, 2, 7]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="btnScanBrowse" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnScanBrowseActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel7.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel7" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="format1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" resourceKey="jPanel3.background"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" resourceKey="format1.text"/>
+            <Property name="name" type="java.lang.String" value="format1" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="format2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" resourceKey="jPanel3.background"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
+            <Property name="selected" type="boolean" value="true"/>
+            <Property name="text" type="java.lang.String" resourceKey="format2.text"/>
+            <Property name="name" type="java.lang.String" value="format2" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel8.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel8" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="org.jdesktop.swingx.JXComboBox" name="cboLocale">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="cboLocale" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel9.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel9" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="org.jdesktop.swingx.JXTextField" name="txtSim">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="txtSim.text"/>
+            <Property name="name" type="java.lang.String" value="txtSim" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="undo.registerDocumentHolder(txtSim);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="format3">
+          <Properties>
+            <Property name="background" type="java.awt.Color" resourceKey="format3.background"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroup1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" resourceKey="format3.text"/>
+            <Property name="name" type="java.lang.String" value="format3" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel10">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="jLabel10.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="jLabel10.foreground"/>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel10.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel10" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
