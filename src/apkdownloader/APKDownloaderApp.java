@@ -24,7 +24,7 @@ public class APKDownloaderApp extends SingleFrameApplication {
     public static Config config = null;
     public static ScanOption so = null;
     public static RenameOption ro = null;
-    public static String version = "1.3.7.1";
+    public static String version = "1.3.7.3";
 
     /**
      * At startup create and show the main frame of the application.
