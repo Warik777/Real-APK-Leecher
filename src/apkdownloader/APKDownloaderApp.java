@@ -89,7 +89,13 @@ public class APKDownloaderApp extends SingleFrameApplication {
      * Main method launching the application.
      */
     public static void main(String[] args) {
-        launch(APKDownloaderApp.class, args);
+//        File f = new File("Real APK Leecher.exe");
+//        if(f.getPath().contains("!")){
+//            System.err.println("В названии папки приложения находится запрещенный символ \"!\"");
+//            return;
+//        }else {
+            launch(APKDownloaderApp.class, args);
+//        }
     }
 
 }

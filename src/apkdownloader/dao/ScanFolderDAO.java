@@ -13,17 +13,20 @@ import com.gc.android.market.api.model.Market.App;
 import com.gc.android.market.api.model.Market.AppsRequest;
 import com.gc.android.market.api.model.Market.AppsResponse;
 import com.gc.android.market.api.model.Market.ResponseContext;
-import com.sun.jna.Native;
-import com.sun.jna.platform.win32.Kernel32;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.IOException;
+/*ADD*/import java.io.FileInputStream;
+/*ADD*/import java.io.FileNotFoundException;
+/*ADD*/import java.io.FileOutputStream;
+/*ADD*/import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+/*ADD*/import java.io.UnsupportedEncodingException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+/*ADD*/import com.sun.jna.Native;
+/*ADD*/import com.sun.jna.platform.win32.Kernel32;
 
 /**
  *
@@ -33,8 +36,36 @@ public class ScanFolderDAO {
 
     private static DecimalFormat df = new DecimalFormat("#,###,###,##0.00");
 
-/*ADD*/@SuppressWarnings("ConvertToTryWithResources")
-    static String getProcessOutput( Process p ) throws UnsupportedEncodingException, IOException{
+/*ADD*/    public static void copyFile( File fromFile, File toFile ) throws FileNotFoundException, IOException {
+/*ADD*/        FileInputStream from = null;
+/*ADD*/        FileOutputStream to = null;
+/*ADD*/        try {
+/*ADD*/            from = new FileInputStream(fromFile);
+/*ADD*/            to = new FileOutputStream(toFile);
+/*ADD*/            byte[] buffer = new byte[4096];
+/*ADD*/            int bytesRead;
+/*ADD*/            while ((bytesRead = from.read(buffer)) != -1) {
+/*ADD*/                to.write(buffer, 0, bytesRead); // write
+/*ADD*/            }
+/*ADD*/        } finally {
+/*ADD*/            if (from != null) {
+/*ADD*/                try {
+/*ADD*/                    from.close();
+/*ADD*/                } catch (IOException e) {
+/*ADD*/                    ;
+/*ADD*/                }
+/*ADD*/            }
+/*ADD*/            if (to != null) {
+/*ADD*/                try {
+/*ADD*/                    to.close();
+/*ADD*/                } catch (IOException e) {
+/*ADD*/                    ;
+/*ADD*/                }
+/*ADD*/            }
+/*ADD*/        }
+/*ADD*/    }
+/*ADD*/
+/*ADD*/    static String getProcessOutput( Process p ) throws UnsupportedEncodingException, IOException{
 /*ADD*/        String line = "";
 /*ADD*/        InputStream is = p.getInputStream();
 /*ADD*/        InputStreamReader isr = new InputStreamReader(is, "UTF8");
@@ -48,7 +79,7 @@ public class ScanFolderDAO {
 /*ADD*/        is.close();
 /*ADD*/        return line;
 /*ADD*/    }
-
+/*ADD*/    
 /*ADD*/    public static String GetShortPathName(String path) {
 /*ADD*/        char[] result = new char[256];
 /*ADD*/        Kernel32.INSTANCE.GetShortPathName(path, result, result.length);
@@ -77,7 +108,7 @@ public class ScanFolderDAO {
 
                 if (listOfFiles[i].isFile()) {
                     files = listOfFiles[i].getAbsolutePath();
-                    filename = listOfFiles[i].getName();
+/*ADD filenameCopy =*/                    filename = filenameCopy = listOfFiles[i].getName();
                     filesize = (double) (listOfFiles[i].length()) / (1024 * 1024);
                    if (files.toLowerCase().endsWith(".apk")) {
                         Process p = rt.exec("lib" + File.separator + "aapt d badging \"" + files + "\"", null, new File("lib"));
@@ -154,7 +185,7 @@ public class ScanFolderDAO {
                         session.append(appsRequest, callback);
 /*ADD*/                        ++enqueuedFiles;
 /*ADD*/                        if (enqueuedFiles % 19 == 0 && enqueuedFiles != 0) {
-/*ADD*/                            session.flush();
+                            session.flush();
 /*ADD*/                            enqueuedFiles = 0;
 /*ADD*/                        }
 

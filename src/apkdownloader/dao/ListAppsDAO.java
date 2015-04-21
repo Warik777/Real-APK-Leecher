@@ -39,7 +39,7 @@ import javax.swing.JOptionPane;
 public class ListAppsDAO {
 
     public static List<App> responseApps = new ArrayList<App>();
-    private int percent = 0;
+///*DEL*/    private int percent = 0;
     private static DecimalFormat df = new DecimalFormat("#,###,###,##0.00");
 
     private static void loadApps() {
@@ -58,6 +58,7 @@ public class ListAppsDAO {
                 session.getContext().setSimOperatorNumeric(sim);
             }
             responseApps.clear();
+/*ADD*/            APKDownloaderView.load.firePropertyChange("message", "", "Получение списка приложений ...");
             for (int i = 0; i < cf.getRecordShow(); i += 10) {
                 AppsRequest appsRequest = AppsRequest.newBuilder().setQuery(strSearch).setStartIndex(i).setEntriesCount(10).setWithExtendedInfo(true).build();
                 session.append(appsRequest, new Callback<AppsResponse>(){
@@ -69,16 +70,19 @@ public class ListAppsDAO {
                         for (App app : list) {
                             responseApps.add(app);
                         }
-                        APKDownloaderView.load.firePropertyChange("message", "", "Получение списка приложений ...");
-                        if (responseApps.isEmpty()) {
-                            JOptionPane.showMessageDialog(null, "Не удалось найти приложения с заданными параметрами поиска!\r\n", "Совпадений не найдено", JOptionPane.OK_OPTION);
-                            return;
-                        }
+///*DEL*/                        APKDownloaderView.load.firePropertyChange("message", "", "Получение списка приложений ...");
+///*DEL*/                        if (responseApps.isEmpty()) {
+///*DEL*/                            JOptionPane.showMessageDialog(null, "Не удалось найти приложения с заданными параметрами поиска!\r\n", "Совпадений не найдено", JOptionPane.OK_OPTION);
+///*DEL*/                            return;
+///*DEL*/                        }
                     }
                 });
 //                session.append(appsRequest, callback);
             }
             session.flush();
+/*ADD*/            if (responseApps.isEmpty()) {
+/*ADD*/                JOptionPane.showMessageDialog(null, "Не удалось найти приложения с заданными параметрами поиска!\r\n", "Совпадений не найдено", JOptionPane.OK_OPTION);
+/*ADD*/            }
         }
     }
 
@@ -160,11 +164,11 @@ public class ListAppsDAO {
         try {
             MarketSession session = new MarketSession(true);
 
-            Config cf = APKDownloaderApp.config;
+/*ADD final*/            final Config cf = APKDownloaderApp.config;
             session.login(cf.getEmail(), cf.getPassword(), cf.getDeviceId());
-            InstallAsset ia = session.queryGetAssetRequest(assetId).getInstallAsset(0);
-            String cookieName = ia.getDownloadAuthCookieName();
-            String cookieValue = ia.getDownloadAuthCookieValue();
+/*ADD final*/            final InstallAsset ia = session.queryGetAssetRequest(assetId).getInstallAsset(0);
+/*ADD final*/            final String cookieName = ia.getDownloadAuthCookieName();
+/*ADD final*/            final String cookieValue = ia.getDownloadAuthCookieValue();
             URL url = new URL(ia.getBlobUrl());
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
@@ -178,32 +182,32 @@ public class ListAppsDAO {
                 conn.setRequestProperty("User-Agent", "Android-Market/2 (sapphire PLAT-RC33); gzip");
                 conn.setRequestProperty("Cookie", cookieName + "=" + cookieValue);
             }
-            int appLength = conn.getContentLength();
-            InputStream inputstream = (InputStream) conn.getInputStream();
-            String fileToSave = cf.getFolderToSave() + (cf.getFolderToSave().equals("") ? "" : File.separator) + title;
-            BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(fileToSave));
-            byte[] buf = new byte[1024];
+/*ADD final*/            final int appLength = conn.getContentLength();
+/*ADD final*/            final InputStream inputstream = (InputStream) conn.getInputStream();
+/*ADD final*/            final String fileToSave = cf.getFolderToSave() + (cf.getFolderToSave().equals("") ? "" : File.separator) + title;
+/*ADD final*/            final BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(fileToSave));
+/*ADD final*/            final byte[] buf = new byte[16536/*1024*/];
             int k = 0;
             int readed = 0;
             while ((k = inputstream.read(buf)) > 0) {
                 stream.write(buf, 0, k);
                 readed += k;
-                percent = readed * 100 / appLength;
-                if (appLength - readed > 1024) {
-                    buf = new byte[1024];
-                } else {
-                    buf = new byte[appLength - readed];
-                }
+/*ADD final int*/                final int percent = readed * 100 / appLength;
+///*DEL*/                if (appLength - readed > 1024) {
+///*DEL*/                    buf = new byte[1024];
+///*DEL*/                } else {
+///*DEL*/                    buf = new byte[appLength - readed];
+///*DEL*/                }
                 DownloadBox.downloads.get(index).firePropertyChange("progress", 0, percent);
                 if (DownloadBox.downloads.get(index).isCancelled()) {
                     break;
                 }
             }
             inputstream.close();
-            inputstream = null;
+///*DEL*/            inputstream = null;
             stream.flush();
             stream.close();
-            stream = null;
+///*DEL*/            stream = null;
             System.gc();
             if (DownloadBox.downloads.get(index).isCancelled()) {
                 File f = new File(fileToSave);
