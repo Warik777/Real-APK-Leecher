@@ -870,7 +870,7 @@ public class APKDownloaderView extends FrameView {
         protected Void doInBackground() {
             try {
         firePropertyChange("message", "", "Проверка обновлений...");
-                URL url = new URL("http://bytestore.ru/version.html");
+                URL url = new URL("https://raw.githubusercontent.com/Warik777/Real-APK-Leecher/master/version.txt");
                 URLConnection con = url.openConnection();
                 BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
                 String inputLine = in.readLine().replaceAll("^.*version:", "");
